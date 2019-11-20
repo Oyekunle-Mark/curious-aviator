@@ -12,3 +12,9 @@ class Station:
         self.name = name
         self.station_type = station_type
         self.orbit = orbit
+
+
+class Rocket:
+    def __init__(self, name, is_luxury):
+        self.name = name
+        self.is_luxury = is_luxury
