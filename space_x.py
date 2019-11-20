@@ -5,3 +5,10 @@ class User:
 
     def load_wallet(self, amount):
         self.balance += amount
+
+
+class Station:
+    def __init(self, name, station_type, orbit):
+        self.name = name
+        self.station_type = station_type
+        self.orbit = orbit
