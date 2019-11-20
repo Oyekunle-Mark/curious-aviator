@@ -7,6 +7,8 @@ class User:
         self.balance += amount
 
     def travel(self, source, destination, rocket):
+        # initialize fare to zero
+        fare = 0
         pass
 
     @property
