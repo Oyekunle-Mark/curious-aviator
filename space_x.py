@@ -27,7 +27,7 @@ class User:
         self.balance -= fare
 
     @property
-    def balance(self):
+    def wallet_balance(self):
         return self.balance
 
 
