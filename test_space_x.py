@@ -32,7 +32,7 @@ class TestSpaceX(unittest.TestCase):
         user.travel(moon, spock, falcon_1)
         user.travel(spock, iss, falcon_9)
 
-        self.assertEqual(user.wallet_balance, 1050)
+        self.assertEqual(user.wallet_balance, 1950)
 
 
 if __name__ == "__main__":
