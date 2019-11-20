@@ -29,9 +29,12 @@ class TestSpaceX(unittest.TestCase):
         user.load_wallet(3000)
         # take trips
         user.travel(abuja, moon, falcon_9)
-        user.travel(moon, spock, falcon_1)
-        user.travel(spock, iss, falcon_9)
+        self.assertEqual(user.wallet_balance, 2900)
 
+        user.travel(moon, spock, falcon_1)
+        self.assertEqual(user.wallet_balance, 2650)
+
+        user.travel(spock, iss, falcon_9)
         self.assertEqual(user.wallet_balance, 1950)
 
 
