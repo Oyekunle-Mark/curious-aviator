@@ -6,13 +6,13 @@ class TestSpaceX(unittest.TestCase):
     def test_new_user_balance(self):
         user = User("Lone Voyager")
 
-        self.assertEqual(user.balance, 0)
+        self.assertEqual(user.wallet_balance, 0)
 
     def test_load_wallet(self):
         user = User("Lone Voyager")
         user.load_wallet(500)
 
-        self.assertEqual(user.balance, 500)
+        self.assertEqual(user.wallet_balance, 500)
 
     def test_balance_after_travels(self):
         user = User("Lone Voyager")
@@ -32,7 +32,7 @@ class TestSpaceX(unittest.TestCase):
         user.travel(moon, spock, falcon_1)
         user.travel(spock, iss, falcon_9)
 
-        self.assertEqual(user.balance, 1050)
+        self.assertEqual(user.wallet_balance, 1050)
 
 
 if __name__ == "__main__":
