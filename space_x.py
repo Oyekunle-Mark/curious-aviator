@@ -8,7 +8,15 @@ class User:
 
     def travel(self, source, destination, rocket):
         # initialize fare to zero
-        fare = 0
+        # check if source and destination are in the same orbit
+            # add 50 to the fare
+        # otherwise,
+            # add 250 to the fare
+        # check if rocket is a luxury rocket
+            # double the fare
+        # check if destination station_type is man_made
+            # add 200 to the fare
+        # deduct the fare from the balance
         pass
 
     @property
