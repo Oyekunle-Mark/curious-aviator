@@ -6,6 +6,13 @@ class User:
     def load_wallet(self, amount):
         self.balance += amount
 
+    def travel(self, source, destination, rocket):
+        pass
+
+    @property
+    def balance(self):
+        return self.balance
+
 
 class Station:
     def __init(self, name, station_type, orbit):
